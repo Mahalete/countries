@@ -1,0 +1,13 @@
+.country_capital {
+  padding-top: 1rem;
+  font-size: 30px;
+  font-style: oblique;
+  padding-bottom: 1.5rem;
+}
+.title_capital {
+  text-align: center;
+}
+.date_time {
+  font-size: 20px;
+  display: inline-block;
+}

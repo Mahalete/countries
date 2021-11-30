@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from "axios";
 import Spinner from "react-spinner-material";
 import CountryCard from "./CountryCard";
-import { LVAL_TYPES } from "@babel/types";
 
 class CountriesList extends Component {
   state = {
@@ -53,8 +52,8 @@ class CountriesList extends Component {
                   .toLowerCase()
                   .includes(this.state.searchInput.toLowerCase());
               })
-              .map((c) => (
-                <CountryCard {...c} key={c.name} />
+              .map((country) => (
+                <CountryCard {...country} key={country.name} /> // Taking card data coming as object is called country , and we taking this passing to the next component opened. Gets all the data in there.
               ))}
           </div>
         </div>

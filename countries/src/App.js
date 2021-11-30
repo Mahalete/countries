@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import Home from "./components/Home";
 import CountriesList from "./components/CountriesList";
 import {
@@ -20,10 +21,14 @@ const App = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link className="menu_list" to="/">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/countries">Countries</Link>
+            <Link className="menu_list" to="/countries">
+              Countries
+            </Link>
           </li>
         </ul>
       </nav>

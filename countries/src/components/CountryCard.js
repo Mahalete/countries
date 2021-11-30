@@ -13,7 +13,7 @@ const CountryCard = ({
   population,
 }) => {
   return (
-    <Link to={capital}>
+    <Link className="card-as-links" to={capital}>
       <div className="country" key={name}>
         <h2> {name}</h2> <h3>{capital}</h3>
         <img src={flags.png} alt={name} />

@@ -12,11 +12,8 @@
 
   box-shadow: 0 0 5px #333;
 } */
-body {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-img {
+
+.flag_img {
   height: 7rem;
   width: 3rem;
   border-radius: 80%;
@@ -29,7 +26,7 @@ img {
 .countries {
   display: flex;
   grid-gap: 3rem;
-  background-image: url("../Assets/earth.jpg");
+  background-image: url("../Assets/earth_map.jpg");
 }
 
 .country {

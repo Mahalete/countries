@@ -41,10 +41,16 @@ class CountriesList extends Component {
     if (!this.state.isloading) {
       return (
         <div>
-          <header>
-            <h1>Countries List</h1>
-          </header>
-          <input type="text" name="search" onChange={this.searchHandler} />
+          <h1 className="text-3xl content-evenly pl-10 pt-3 Roboto text-center">
+            Countries List
+          </h1>
+          <input
+            className="bg-gray-200 focus:bg-white ml-4 mt-4 "
+            type="text"
+            name="search"
+            onChange={this.searchHandler}
+          />
+
           <div className="countries">
             {this.state.data
               .filter((c) => {

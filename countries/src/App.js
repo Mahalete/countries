@@ -1,5 +1,6 @@
 import React from "react";
-import "./App.css";
+import "./index.css";
+// import "./App.css";
 import Home from "./components/Home";
 import CountriesList from "./components/CountriesList";
 import {
@@ -18,15 +19,21 @@ const RouteWrapper = (props) => {
 const App = () => {
   return (
     <BrowserRouter>
-      <nav>
-        <ul>
-          <li>
-            <Link className="menu_list" to="/">
+      <nav className="bg-yellow-500">
+        <ul className="flex border-b">
+          <li className="-mb-px mr-1 mt-4 ml-2">
+            <Link
+              className=" inline-block  py-2 px-4 text-white font-semibold text-2xl"
+              to="/"
+            >
               Home
             </Link>
           </li>
-          <li>
-            <Link className="menu_list" to="/countries">
+          <li className="-mb-px mr-1 mt-4 ">
+            <Link
+              className="inline-block  py-2 px-4 text-white font-semibold text-2xl "
+              to="/countries"
+            >
               Countries
             </Link>
           </li>
